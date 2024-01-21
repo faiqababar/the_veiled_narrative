@@ -1,0 +1,31 @@
+.outer-div {
+  display: inline-block;
+  width: 100%;
+  min-height: 68vh;
+  margin-top: -1rem;
+  margin-bottom: -2rem;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-div{
+ width: 100%;
+ height: 100%;
+ padding: 3rem;
+}
+
+.about-title-div{
+font-size: 1.5rem;
+color: #606060;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.contact-title-div{
+font-size: 1.3rem;
+color: #606060;
+font-weight: bold;
+margin-top: 1rem;
+margin-bottom: 0.2rem;
+}

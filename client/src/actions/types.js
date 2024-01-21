@@ -1,0 +1,22 @@
+// auth actions
+export const SET_ERRORS = "SET_ERRORS";
+export const TOGGLE_USER_LOADING = "TOGGLE_LOADING";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+
+// posts options
+export const CREATE_POST = "CREATE_POST";
+export const UPDATE_POST = "UPDATE_POST";
+export const DELETE_POST = "DELETE_POST";
+export const GET_POST = "GET_POST";
+export const TOGGLE_POST_LOADING = "POST_LOADING";
+export const GET_POSTS = "GET_POSTS";
+export const RESET_POST = "RESET_POST";
+export const TOGGLE_POSTS_LOADING = "POSTS_LOADING";
+export const INCREMENT_SKIP = "INCREMENT_SKIP";
+export const ENABLE_POSTS_FETCHING = "ENABLE_POSTS_FETCHING";
+export const DISABLE_POSTS_FETCHING = "DISABLE_POSTS_FETCHING";
+export const ENABLE_PUBLISH_FLAG = "ENABLE_PUBLISH_FLAG";
+export const DISABLE_PUBLISH_FLAG = "DISABLE_PUBLISH_FLAG";
+
+//side drawer options
+export const TOGGLE_SIDE_DRAWER = "TOGGLE_SIDE_DRAWER";

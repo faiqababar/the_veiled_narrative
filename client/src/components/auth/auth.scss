@@ -1,0 +1,54 @@
+@import "../../sass/styles";
+
+.custom-btn {
+  background: #fff;
+  color: #000;
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.custom-btn:hover, .custom-btn:focus, .custom-btn:active {
+  background: #000;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 0;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+
+.custom-link {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  padding: 5px 5px;
+  position: relative;
+}
+
+.custom-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.custom-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.textInput {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0;
+  border: "2px solid #000"
+}
+

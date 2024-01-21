@@ -1,0 +1,214 @@
+@import "../../sass/styles";
+
+// ############ List Post #####################
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 400px));
+   grid-gap: 1em;
+}
+
+.a, a:link, a:visited, .a:hover, a:active   
+{
+   text-decoration: none !important;
+}
+
+.hvr_icon:hover {
+    position: relative;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    transform: translateZ(1);
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+// ######### Post ############
+
+.postCover {
+   background: #F8F8F8;
+}
+
+// ############# ViewPost ##############
+
+.viewPost {
+   overflow-wrap: break-word;
+}
+
+.postTitle {
+   color: $primaryColor;
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+
+.footerStyle {
+   color: $subtitleColor;
+}
+
+// ############# Create/Update Post ##############
+
+.custom-btn {
+  background: #fff;
+  color: #000;
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 0;
+  margin-top: -2rem;
+  text-transform: uppercase;
+}
+
+.custom-btn:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 0;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.custom-btn:focus {
+  background: #000 !important;
+  color: #fff !important;
+  border: 2px solid black !important;
+  border-radius: 0;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.custom-btn:active {
+  background: #000 !important;
+  color: #fff !important;
+  border: 2px solid black !important;
+  border-radius: 0;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.custom-input {
+  background: #fff;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 0;
+}
+
+
+.quillEditor .ql-container {
+  //border-bottom-left-radius: 0.5em;
+  //border-bottom-right-radius: 0.5em;
+  font-size: 0.95em;
+  border: "1px solid black";
+}
+
+.quillEditor .ql-container .ql-editor.ql-blank::before{
+    font-size: 1.1em !important;
+    font-style: initial !important;
+    font-family: $font-stack;
+    border: "1px solid black";
+}
+
+/* Snow Theme */
+.quillEditor .ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec;
+  border-radius: 0
+ // border-top-left-radius: 0.5em;
+ // border-top-right-radius: 0.5em;
+}
+
+.quillEditor .ql-editor {
+  min-height: 10em;
+  max-height: 17em;
+}
+
+/* Set droplist names - -item is the currently selected font, -label is the font's appearance in the droplist*/
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='']::before
+{
+  content: 'Default';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='times-new-roman']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='times-new-roman']::before
+{
+  content: 'Times New Roman';
+  font-family: 'Times New Roman';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='arial']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='arial']::before
+{
+  content: 'Arial';
+  font-family: 'Arial';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='verdana']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='verdana']::before
+{
+  content: 'Verdana';
+  font-family: 'Verdana';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='courier']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='courier']::before
+{
+  content: 'Courier';
+  font-family: 'Courier';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='garamond']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='garamond']::before
+{
+  content: 'Garamond';
+  font-family: 'Garamond';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='tahoma']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='tahoma']::before
+{
+  content: 'Tahoma';
+  font-family: 'Tahoma';
+}
+/****************************************************
+Set the font-family content used for the HTML content.
+*****************************************************/
+.ql-font-arial {
+  font-family: 'Arial';
+}
+
+.ql-font-times-new-roman {
+  font-family: 'Times New Roman';
+}
+
+.ql-font-verdana {
+  font-family: 'Verdana';
+}
+
+.ql-font-courier {
+  font-family: 'Courier';
+}
+
+.ql-font-garamond {
+  font-family: 'Garamond';
+}
+
+.ql-font-tahoma {
+  font-family: 'Tahoma';
+}
+// #################################
+
+.newsletter-div{
+  margin: auto;
+  width: 50%;
+  font-size: 1.3em;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 2%;
+}
